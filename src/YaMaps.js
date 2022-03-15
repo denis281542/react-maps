@@ -9,14 +9,14 @@ export const YaMaps = ({lat, lng}) => {
 
             >
                 <Placemark 
-                    key={[lat]}
+                    key={+lat}
                     geometry={[lat, lng]}
-                    // options={{
-                    //     iconLayout:'default#imageWithContent',
-                    //     iconContentLayout: './location-dot-solid.svg',
-                    //     iconContentSize: [100,100],
-                    //     iconContentOffset: [10, 10],
-                    // }}
+                    options={{
+                        iconLayout:'default#imageWithContent',
+                        iconContentLayout: './location-dot-solid.svg',
+                        iconContentSize: [100,100],
+                        iconContentOffset: [10, 10],
+                    }}
                 />
             </Map>
         </YMaps>
