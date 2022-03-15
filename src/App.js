@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { YaMaps } from './YaMaps';
+import states from './state.json';
+import { useState } from 'react';
 
 function App() {
+  const [lat, setLat] = useState(null)
+  const [lng, setLng] = useState(null)
+  
+  const getCoords = (lat, lng) => {
+    setLat(lat)
+    setLng(lng)
+  }
+  const street = states.pickPoints.map((state, idx) => {
+    return(
+      <li key={idx} onClick={() => getCoords(state.latitude, state.longitude)}>      
+        <h3 >{state.address}</h3>
+        {state.budgets.map((button, idx) => {
+          return(<button key={idx}>{button}</button>)
+        })}
+      </li>
+    )})
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {street}
+      
+      <YaMaps 
+        lat={lat}
+        lng={lng}
+      />
     </div>
   );
 }
