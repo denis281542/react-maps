@@ -2,4 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #969c9f;
+  font-family: Arial;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  padding: 14px 8px;
+  height: 100vh;
+}
+
+.state__list {
+  max-width: 490px;
+  width: 100%;
+  background-color: #2a2c2d;
+}
+
+.state__item {
+  /* height: 72px; */
+  background-color: #3a3d3e;
+  margin-bottom: 8px;
+  padding: 10px 14px 9px;
+}
+
+.state__address {
+  padding-bottom: 15px;
+}
+
+.state__button {
+  margin-right: 12px;
+  background-color: #282c2d;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 2px;
 }
