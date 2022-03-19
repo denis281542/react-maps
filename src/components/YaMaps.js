@@ -8,6 +8,7 @@ export const YaMaps = ({lat, lng, map}) => {
           instanceRef={map}
           className="map"
           state={{ center: [lat, lng], zoom: 12 }}
+          state={{ center: [lat, lng], zoom: 12 }}
         >
           <Placemark 
             geometry={[lat, lng]}
