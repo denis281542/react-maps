@@ -4,6 +4,6 @@
 Пример анимированного перемещения между магазинами на карте. </br>
 Технологии: React, Webpack, Yandex maps.</br>
 Для запуска: git clone => npm init => npm start. </br>
-Рабочий вариант <a href="https://express-shina.web.app/" '_blank'>тут</a>
+Рабочий вариант <a href="https://express-shina.web.app/" target="_blank">тут</a>
 
 
