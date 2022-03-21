@@ -3,6 +3,6 @@
 
 Пример отображения магазинов на карте. </br>
 Для запуска: git clone => npm init => npm start. </br>
-Рабочий вариант тут: https://express-shina.web.app/
+Рабочий вариант <a href="https://express-shina.web.app/">тут</a>
 
 
